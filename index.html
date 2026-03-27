@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dog Lovers | Rescate y Amor</title>
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --primary: #ff6b35;
+    --secondary: #4ecdc4;
+    --dark: #1a1a1a;
+    --light: #f8f9fa;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+}
+
+/* NAVBAR */
+.navbar {
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.85);
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1558788353-f76d92427f16') center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e85a2b;
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+/* SECTION */
+.section {
+    padding: 80px 0;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    border-radius: 20px;
+    padding: 60px;
+}
+
+/* FOOTER */
+footer {
+    background: var(--dark);
+    color: white;
+}
+
+/* ANIMATIONS */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+<div class="container">
+    <a class="navbar-brand fw-bold text-dark" href="#">🐶 Dog Lovers</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#dogs">Adopta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#help">Ayuda</a></li>
+        </ul>
+        <a href="#donar" class="btn btn-primary ms-3">Donar</a>
+    </div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero text-center">
+<div class="container">
+    <h1>Rescatamos vidas. Creamos familias.</h1>
+    <p class="lead">Cada perro merece amor, hogar y una segunda oportunidad.</p>
+    <a href="#dogs" class="btn btn-primary btn-lg mt-3">Adoptar ahora</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section text-center">
+<div class="container">
+    <h2 class="mb-4 fade-in">Nuestra misión</h2>
+    <p class="lead fade-in">
+        En Dog Lovers rescatamos perros abandonados, los rehabilitamos y los conectamos con familias que les darán amor eterno.
+    </p>
+</div>
+</section>
+
+<!-- DOGS -->
+<section id="dogs" class="section bg-light">
+<div class="container">
+    <h2 class="text-center mb-5 fade-in">Perros en adopción</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 fade-in">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Luna</h5>
+                    <p>Juguetona, cariñosa y lista para amar.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 fade-in">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Max</h5>
+                    <p>Leal, protector y muy amigable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 fade-in">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2" class="card-img-top">
+                <div class="card-body text-center">
+                    <h5>Rocky</h5>
+                    <p>Energético y perfecto para aventuras.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- HELP -->
+<section id="help" class="section text-center">
+<div class="container">
+    <h2 class="mb-4 fade-in">¿Cómo puedes ayudar?</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4 fade-in">
+            <div class="card p-4">
+                <h4>Adopta</h4>
+                <p>Dale un hogar a un perro rescatado.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 fade-in">
+            <div class="card p-4">
+                <h4>Dona</h4>
+                <p>Tu apoyo salva vidas cada día.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 fade-in">
+            <div class="card p-4">
+                <h4>Voluntariado</h4>
+                <p>Ayuda directamente en rescates.</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<!-- CTA -->
+<section id="donar" class="section">
+<div class="container">
+    <div class="cta text-center fade-in">
+        <h2>Cambia una vida hoy</h2>
+        <p>Tu ayuda puede significar la diferencia entre abandono y amor.</p>
+        <button class="btn btn-light btn-lg mt-3" onclick="donar()">Donar ahora</button>
+    </div>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4">
+    <p>© 2026 Dog Lovers | Rescate de perros</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+// Animación scroll
+const elements = document.querySelectorAll('.fade-in');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        if(position < window.innerHeight - 100){
+            el.classList.add('visible');
+        }
+    });
+});
+
+// CTA acción psicológica
+function donar(){
+    alert("Gracias por querer ayudar 🐶❤️ Pronto habilitaremos pagos online.");
+}
+</script>
+
+</body>
+</html>
